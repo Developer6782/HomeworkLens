@@ -17,7 +17,7 @@ Built for **EvoHacks 2026** — theme: *AI for Automation*.
 - **Deadline intelligence** — converts relative words like "kal", "Friday", "parso" into real dates with urgency badges (Today / Tomorrow / In X days)
 - **Focus strip** — everything due today or tomorrow, plus a countdown to the next exam, shown first
 - **Urgency sorting** — homework auto-sorted by priority and nearest deadline
-- **Bilingual output** — English, Hindi or Hinglish
+- **English output** — AI responses in English
 - **AI answer grading** — paste any exam question plus your answer; AI awards marks strictly, like an examiner, with strengths, gaps and an improvement tip
 - **Live API key check** — one click in Settings verifies your Gemini key against Google's API
 - **Live model list** — fetches the real list of Gemini models available on your key and lets you pick which vision model to use

@@ -59,9 +59,7 @@ function daysUntil(iso) {
 }
 
 function outLanguage(lang) {
-  return lang === 'hindi' ? 'Hindi (Devanagari script)'
-    : lang === 'hinglish' ? 'Hinglish (Hindi written in Roman script)'
-    : 'English';
+  return 'English';
 }
 
 /* ---------- subject colors ---------- */
@@ -494,13 +492,11 @@ function listGroup(title, lines, chipLabel, chipCls) {
 function relativeLabel(isoDate) {
   if (!isoDate) return null;
   const diff = daysUntil(isoDate);
-  const lang = getSettings().lang;
-  const hi = lang === 'hindi' || lang === 'hinglish';
-  if (diff < 0) return { text: hi ? 'Late ho gaya' : 'Overdue', cls: 'urgent' };
-  if (diff === 0) return { text: hi ? 'AAJ — Today' : 'Today', cls: 'urgent' };
-  if (diff === 1) return { text: hi ? 'Kal — Tomorrow' : 'Tomorrow', cls: 'soon' };
-  if (diff <= 3) return { text: hi ? `${diff} din me` : `In ${diff} days`, cls: 'soon' };
-  return { text: hi ? `${diff} din baad` : `In ${diff} days`, cls: '' };
+  if (diff < 0) return { text: 'Overdue', cls: 'urgent' };
+  if (diff === 0) return { text: 'Today', cls: 'urgent' };
+  if (diff === 1) return { text: 'Tomorrow', cls: 'soon' };
+  if (diff <= 3) return { text: `In ${diff} days`, cls: 'soon' };
+  return { text: `In ${diff} days`, cls: '' };
 }
 
 /* ---------- checklist rendering ---------- */
