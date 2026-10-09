@@ -1,0 +1,10 @@
+{
+  "name": "HomeworkLens",
+  "short_name": "HomeworkLens",
+  "description": "Class group chaos, turned into a clean checklist, in seconds.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b0f14",
+  "theme_color": "#ff7a1a",
+  "icons": []
+}
